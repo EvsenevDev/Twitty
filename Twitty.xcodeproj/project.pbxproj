@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		620FA5ED18B08B644647CE33 /* libPods-Twitty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1948292FA10B59CA040E79 /* libPods-Twitty.a */; };
+		7149096D1FC85FA200888101 /* MRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7149096C1FC85FA200888101 /* MRAppDelegate.m */; };
+		714909751FC85FA200888101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714909741FC85FA200888101 /* Assets.xcassets */; };
+		714909781FC85FA200888101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714909761FC85FA200888101 /* LaunchScreen.storyboard */; };
+		7149097B1FC85FA200888101 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7149097A1FC85FA200888101 /* main.m */; };
+		714909901FC8711E00888101 /* MRPostCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7149098E1FC8711E00888101 /* MRPostCellTableViewCell.m */; };
+		714909961FC877C100888101 /* MRPostObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 714909951FC877C100888101 /* MRPostObject.m */; };
+		7149099A1FC8830000888101 /* MRScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 714909991FC8830000888101 /* MRScheduler.m */; };
+		714909A61FC883E300888101 /* MRPostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 714909A41FC883E300888101 /* MRPostsViewController.m */; };
+		714909AE1FC887E200888101 /* MRTweetAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 714909AD1FC887E200888101 /* MRTweetAPI.m */; };
+		714909B21FC8887400888101 /* MRPostDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 714909B11FC8887400888101 /* MRPostDisplayManager.m */; };
+		714909B51FC8A3DF00888101 /* MRRealmDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 714909B41FC8A3DF00888101 /* MRRealmDisplayManager.m */; };
+		714909B81FC8AB5500888101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714909B71FC8AB5500888101 /* Main.storyboard */; };
+		714909BD1FC8AD9700888101 /* MRSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 714909BB1FC8AD9700888101 /* MRSettingsViewController.m */; };
+		714909C81FC8C8CE00888101 /* MRLocalSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 714909C71FC8C8CE00888101 /* MRLocalSettings.m */; };
+		714909CB1FC8CAD400888101 /* MRSettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 714909CA1FC8CAD400888101 /* MRSettingsManager.m */; };
+		714909CE1FC9626A00888101 /* MRTweetDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 714909CD1FC9626A00888101 /* MRTweetDataProvider.m */; };
+		714909D41FC97D4E00888101 /* MRPostRealm.m in Sources */ = {isa = PBXBuildFile; fileRef = 714909D31FC97D4E00888101 /* MRPostRealm.m */; };
+		714909DB1FC9E0F000888101 /* MRTweetParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 714909DA1FC9E0F000888101 /* MRTweetParser.m */; };
+		714909E51FCADCE000888101 /* MRTweetDataProviderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 714909E41FCADCE000888101 /* MRTweetDataProviderFactory.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		64D435D3807605C6662EEB01 /* Pods-Twitty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twitty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Twitty/Pods-Twitty.debug.xcconfig"; sourceTree = "<group>"; };
+		714909681FC85FA200888101 /* Twitty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7149096B1FC85FA200888101 /* MRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRAppDelegate.h; sourceTree = "<group>"; };
+		7149096C1FC85FA200888101 /* MRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRAppDelegate.m; sourceTree = "<group>"; };
+		714909741FC85FA200888101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		714909771FC85FA200888101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		714909791FC85FA200888101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7149097A1FC85FA200888101 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7149098D1FC8711E00888101 /* MRPostCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRPostCellTableViewCell.h; sourceTree = "<group>"; };
+		7149098E1FC8711E00888101 /* MRPostCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRPostCellTableViewCell.m; sourceTree = "<group>"; };
+		714909921FC8733F00888101 /* MRPost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRPost.h; sourceTree = "<group>"; };
+		714909941FC877C100888101 /* MRPostObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRPostObject.h; sourceTree = "<group>"; };
+		714909951FC877C100888101 /* MRPostObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRPostObject.m; sourceTree = "<group>"; };
+		714909981FC8830000888101 /* MRScheduler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRScheduler.h; sourceTree = "<group>"; };
+		714909991FC8830000888101 /* MRScheduler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRScheduler.m; sourceTree = "<group>"; };
+		714909A31FC883E300888101 /* MRPostsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRPostsViewController.h; sourceTree = "<group>"; };
+		714909A41FC883E300888101 /* MRPostsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRPostsViewController.m; sourceTree = "<group>"; };
+		714909A81FC8847600888101 /* MRDisplayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRDisplayManager.h; sourceTree = "<group>"; };
+		714909AA1FC886A800888101 /* MRBlockTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRBlockTypes.h; sourceTree = "<group>"; };
+		714909AC1FC887E200888101 /* MRTweetAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRTweetAPI.h; sourceTree = "<group>"; };
+		714909AD1FC887E200888101 /* MRTweetAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRTweetAPI.m; sourceTree = "<group>"; };
+		714909AF1FC887F100888101 /* MRPostDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRPostDataProvider.h; sourceTree = "<group>"; };
+		714909B01FC8887400888101 /* MRPostDisplayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRPostDisplayManager.h; sourceTree = "<group>"; };
+		714909B11FC8887400888101 /* MRPostDisplayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRPostDisplayManager.m; sourceTree = "<group>"; };
+		714909B31FC8A3DF00888101 /* MRRealmDisplayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRRealmDisplayManager.h; sourceTree = "<group>"; };
+		714909B41FC8A3DF00888101 /* MRRealmDisplayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRRealmDisplayManager.m; sourceTree = "<group>"; };
+		714909B61FC8A59800888101 /* MRConfigurableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRConfigurableCell.h; sourceTree = "<group>"; };
+		714909B71FC8AB5500888101 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		714909BA1FC8AD9700888101 /* MRSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRSettingsViewController.h; sourceTree = "<group>"; };
+		714909BB1FC8AD9700888101 /* MRSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRSettingsViewController.m; sourceTree = "<group>"; };
+		714909C51FC8C8BE00888101 /* MRSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRSettings.h; sourceTree = "<group>"; };
+		714909C61FC8C8CE00888101 /* MRLocalSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRLocalSettings.h; sourceTree = "<group>"; };
+		714909C71FC8C8CE00888101 /* MRLocalSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRLocalSettings.m; sourceTree = "<group>"; };
+		714909C91FC8CAD400888101 /* MRSettingsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRSettingsManager.h; sourceTree = "<group>"; };
+		714909CA1FC8CAD400888101 /* MRSettingsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRSettingsManager.m; sourceTree = "<group>"; };
+		714909CC1FC9626A00888101 /* MRTweetDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRTweetDataProvider.h; sourceTree = "<group>"; };
+		714909CD1FC9626A00888101 /* MRTweetDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRTweetDataProvider.m; sourceTree = "<group>"; };
+		714909CF1FC9724D00888101 /* MRPostAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRPostAPI.h; sourceTree = "<group>"; };
+		714909D21FC97D4E00888101 /* MRPostRealm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRPostRealm.h; sourceTree = "<group>"; };
+		714909D31FC97D4E00888101 /* MRPostRealm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRPostRealm.m; sourceTree = "<group>"; };
+		714909D81FC9E0BB00888101 /* MRPostParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRPostParser.h; sourceTree = "<group>"; };
+		714909D91FC9E0F000888101 /* MRTweetParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRTweetParser.h; sourceTree = "<group>"; };
+		714909DA1FC9E0F000888101 /* MRTweetParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRTweetParser.m; sourceTree = "<group>"; };
+		714909DC1FC9FF7400888101 /* MRRealmDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRRealmDataProvider.h; sourceTree = "<group>"; };
+		714909E21FCADB4C00888101 /* MRPostDataProviderFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRPostDataProviderFactory.h; sourceTree = "<group>"; };
+		714909E31FCADCE000888101 /* MRTweetDataProviderFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRTweetDataProviderFactory.h; sourceTree = "<group>"; };
+		714909E41FCADCE000888101 /* MRTweetDataProviderFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRTweetDataProviderFactory.m; sourceTree = "<group>"; };
+		7D88E2A183F3BF3B9C83066F /* Pods-Twitty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twitty.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twitty/Pods-Twitty.release.xcconfig"; sourceTree = "<group>"; };
+		8A1948292FA10B59CA040E79 /* libPods-Twitty.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Twitty.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		714909651FC85FA200888101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				620FA5ED18B08B644647CE33 /* libPods-Twitty.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		705258187EF2E260EA0DA004 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64D435D3807605C6662EEB01 /* Pods-Twitty.debug.xcconfig */,
+				7D88E2A183F3BF3B9C83066F /* Pods-Twitty.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7149095F1FC85FA200888101 = {
+			isa = PBXGroup;
+			children = (
+				7149096A1FC85FA200888101 /* Twitty */,
+				714909691FC85FA200888101 /* Products */,
+				705258187EF2E260EA0DA004 /* Pods */,
+				B2EDC00EF3DEED14B10F2C9D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		714909691FC85FA200888101 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				714909681FC85FA200888101 /* Twitty.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7149096A1FC85FA200888101 /* Twitty */ = {
+			isa = PBXGroup;
+			children = (
+				714909851FC86F0900888101 /* ViewControllers */,
+				714909871FC86F3200888101 /* Views */,
+				714909931FC8734B00888101 /* DisplayManagers */,
+				714909831FC86EF000888101 /* DataProviders */,
+				714909D11FC977A600888101 /* Realm */,
+				714909841FC86EFB00888101 /* APIs */,
+				714909811FC86EDB00888101 /* Models */,
+				714909D71FC9E09000888101 /* Parsers */,
+				714909971FC882D400888101 /* Common */,
+				7149096B1FC85FA200888101 /* MRAppDelegate.h */,
+				7149096C1FC85FA200888101 /* MRAppDelegate.m */,
+				714909741FC85FA200888101 /* Assets.xcassets */,
+				714909B71FC8AB5500888101 /* Main.storyboard */,
+				714909761FC85FA200888101 /* LaunchScreen.storyboard */,
+				714909791FC85FA200888101 /* Info.plist */,
+				7149097A1FC85FA200888101 /* main.m */,
+			);
+			path = Twitty;
+			sourceTree = "<group>";
+		};
+		714909811FC86EDB00888101 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				714909921FC8733F00888101 /* MRPost.h */,
+				714909941FC877C100888101 /* MRPostObject.h */,
+				714909951FC877C100888101 /* MRPostObject.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		714909831FC86EF000888101 /* DataProviders */ = {
+			isa = PBXGroup;
+			children = (
+				714909AF1FC887F100888101 /* MRPostDataProvider.h */,
+				714909DC1FC9FF7400888101 /* MRRealmDataProvider.h */,
+				714909E21FCADB4C00888101 /* MRPostDataProviderFactory.h */,
+				714909E31FCADCE000888101 /* MRTweetDataProviderFactory.h */,
+				714909E41FCADCE000888101 /* MRTweetDataProviderFactory.m */,
+				714909CC1FC9626A00888101 /* MRTweetDataProvider.h */,
+				714909CD1FC9626A00888101 /* MRTweetDataProvider.m */,
+			);
+			path = DataProviders;
+			sourceTree = "<group>";
+		};
+		714909841FC86EFB00888101 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				714909CF1FC9724D00888101 /* MRPostAPI.h */,
+				714909AC1FC887E200888101 /* MRTweetAPI.h */,
+				714909AD1FC887E200888101 /* MRTweetAPI.m */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		714909851FC86F0900888101 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				714909A31FC883E300888101 /* MRPostsViewController.h */,
+				714909A41FC883E300888101 /* MRPostsViewController.m */,
+				714909BA1FC8AD9700888101 /* MRSettingsViewController.h */,
+				714909BB1FC8AD9700888101 /* MRSettingsViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		714909861FC86F2000888101 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				714909B61FC8A59800888101 /* MRConfigurableCell.h */,
+				7149098D1FC8711E00888101 /* MRPostCellTableViewCell.h */,
+				7149098E1FC8711E00888101 /* MRPostCellTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		714909871FC86F3200888101 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				714909861FC86F2000888101 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		714909931FC8734B00888101 /* DisplayManagers */ = {
+			isa = PBXGroup;
+			children = (
+				714909BF1FC8BAD300888101 /* Base */,
+				714909A81FC8847600888101 /* MRDisplayManager.h */,
+				714909B01FC8887400888101 /* MRPostDisplayManager.h */,
+				714909B11FC8887400888101 /* MRPostDisplayManager.m */,
+			);
+			path = DisplayManagers;
+			sourceTree = "<group>";
+		};
+		714909971FC882D400888101 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				714909AA1FC886A800888101 /* MRBlockTypes.h */,
+				714909981FC8830000888101 /* MRScheduler.h */,
+				714909991FC8830000888101 /* MRScheduler.m */,
+				714909C51FC8C8BE00888101 /* MRSettings.h */,
+				714909C61FC8C8CE00888101 /* MRLocalSettings.h */,
+				714909C71FC8C8CE00888101 /* MRLocalSettings.m */,
+				714909C91FC8CAD400888101 /* MRSettingsManager.h */,
+				714909CA1FC8CAD400888101 /* MRSettingsManager.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		714909BF1FC8BAD300888101 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				714909B31FC8A3DF00888101 /* MRRealmDisplayManager.h */,
+				714909B41FC8A3DF00888101 /* MRRealmDisplayManager.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		714909D11FC977A600888101 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				714909D21FC97D4E00888101 /* MRPostRealm.h */,
+				714909D31FC97D4E00888101 /* MRPostRealm.m */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		714909D71FC9E09000888101 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				714909D81FC9E0BB00888101 /* MRPostParser.h */,
+				714909D91FC9E0F000888101 /* MRTweetParser.h */,
+				714909DA1FC9E0F000888101 /* MRTweetParser.m */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		B2EDC00EF3DEED14B10F2C9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A1948292FA10B59CA040E79 /* libPods-Twitty.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		714909671FC85FA200888101 /* Twitty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7149097E1FC85FA200888101 /* Build configuration list for PBXNativeTarget "Twitty" */;
+			buildPhases = (
+				E598857980B39F9709790FFB /* [CP] Check Pods Manifest.lock */,
+				714909641FC85FA200888101 /* Sources */,
+				714909651FC85FA200888101 /* Frameworks */,
+				714909661FC85FA200888101 /* Resources */,
+				10043409D91F60518CF8EDAF /* [CP] Embed Pods Frameworks */,
+				68FCC9091521001B6E5B8301 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Twitty;
+			productName = Twitty;
+			productReference = 714909681FC85FA200888101 /* Twitty.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		714909601FC85FA200888101 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MR;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = BED;
+				TargetAttributes = {
+					714909671FC85FA200888101 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 714909631FC85FA200888101 /* Build configuration list for PBXProject "Twitty" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7149095F1FC85FA200888101;
+			productRefGroup = 714909691FC85FA200888101 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				714909671FC85FA200888101 /* Twitty */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		714909661FC85FA200888101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				714909781FC85FA200888101 /* LaunchScreen.storyboard in Resources */,
+				714909751FC85FA200888101 /* Assets.xcassets in Resources */,
+				714909B81FC8AB5500888101 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10043409D91F60518CF8EDAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twitty/Pods-Twitty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68FCC9091521001B6E5B8301 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twitty/Pods-Twitty-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E598857980B39F9709790FFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Twitty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		714909641FC85FA200888101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				714909CE1FC9626A00888101 /* MRTweetDataProvider.m in Sources */,
+				714909BD1FC8AD9700888101 /* MRSettingsViewController.m in Sources */,
+				714909AE1FC887E200888101 /* MRTweetAPI.m in Sources */,
+				714909CB1FC8CAD400888101 /* MRSettingsManager.m in Sources */,
+				714909D41FC97D4E00888101 /* MRPostRealm.m in Sources */,
+				7149099A1FC8830000888101 /* MRScheduler.m in Sources */,
+				714909B51FC8A3DF00888101 /* MRRealmDisplayManager.m in Sources */,
+				714909A61FC883E300888101 /* MRPostsViewController.m in Sources */,
+				714909961FC877C100888101 /* MRPostObject.m in Sources */,
+				714909901FC8711E00888101 /* MRPostCellTableViewCell.m in Sources */,
+				714909C81FC8C8CE00888101 /* MRLocalSettings.m in Sources */,
+				7149097B1FC85FA200888101 /* main.m in Sources */,
+				714909E51FCADCE000888101 /* MRTweetDataProviderFactory.m in Sources */,
+				714909DB1FC9E0F000888101 /* MRTweetParser.m in Sources */,
+				7149096D1FC85FA200888101 /* MRAppDelegate.m in Sources */,
+				714909B21FC8887400888101 /* MRPostDisplayManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		714909761FC85FA200888101 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				714909771FC85FA200888101 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7149097C1FC85FA200888101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7149097D1FC85FA200888101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7149097F1FC85FA200888101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64D435D3807605C6662EEB01 /* Pods-Twitty.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Twitty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evsenev.Twitty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		714909801FC85FA200888101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D88E2A183F3BF3B9C83066F /* Pods-Twitty.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Twitty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evsenev.Twitty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		714909631FC85FA200888101 /* Build configuration list for PBXProject "Twitty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7149097C1FC85FA200888101 /* Debug */,
+				7149097D1FC85FA200888101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7149097E1FC85FA200888101 /* Build configuration list for PBXNativeTarget "Twitty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7149097F1FC85FA200888101 /* Debug */,
+				714909801FC85FA200888101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 714909601FC85FA200888101 /* Project object */;
+}
