@@ -31,7 +31,7 @@ static const NSInteger kOldUpdateCellOffset = 5;
     [super viewDidLoad];
     self.factory = [MRTweetDataProviderFactory new];
     self.dataProvider = [self.factory makePostDataProviderWithCache];
-    [self.dataProvider setSeacrhText:@"Hello"];
+    [self.dataProvider setSearchText:@"Hello"];
     
     RLMResults *results = [self.dataProvider observableResults];
     UITableView *table = self.tableView;

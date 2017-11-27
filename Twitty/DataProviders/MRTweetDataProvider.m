@@ -29,7 +29,7 @@
     return self;
 }
 
-- (void)setSeacrhText:(NSString *)text {
+- (void)setSearchText:(NSString *)text {
     [self.postAPI setSearchText:text];
 }
 

@@ -12,7 +12,7 @@
 
 @protocol MRPostDataProvider <NSObject>
 - (instancetype)initWithAPI:(id<MRPostAPI>)api;
-- (void)setSeacrhText:(NSString *)text;
+- (void)setSearchText:(NSString *)text;
 - (void)fetchPosts;
 - (void)fetchNewPostsFrom:(id<MRPost>)post;
 - (void)fetchOldPostsFrom:(id<MRPost>)post;
